@@ -59,16 +59,6 @@ class _MyloginState extends State<Mylogin> {
                       ),
                     ),
 
-                      TextButton(onPressed: (){},
-                        child: Text(
-                        'Forgot Password',
-                        style: TextStyle(
-                          decoration: TextDecoration.underline,
-                          fontSize: 18,
-                          color: Color(0xff4c505b),
-
-                ),
-
                     SizedBox(
                       height: 40,
                     ),
@@ -93,7 +83,11 @@ class _MyloginState extends State<Mylogin> {
                              child: IconButton(
 
                              color: Colors.white,
-                               onPressed: (){},
+                               onPressed: (){
+                               Navigator.pushNamed(
+                                   context, 'list');
+
+                               },
                                icon: Icon(Icons.arrow_forward),
                   ),
                 ),
@@ -133,9 +127,7 @@ class _MyloginState extends State<Mylogin> {
                     )
 
 
-
-
-                        ],
+                  ],
                 ),
               ),
             )
